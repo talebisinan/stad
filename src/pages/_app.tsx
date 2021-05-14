@@ -10,14 +10,14 @@ Amplify.configure({ ...awsExports, ssr: true });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    // <AmplifyAuthenticator>
-    <div className="min-h-screen bg-green-100">
-      <Navbar />
-      <main className="-mt-32">
-        <Component {...pageProps} />
-      </main>
-    </div>
-    // </AmplifyAuthenticator>
+    <AmplifyAuthenticator>
+      <div className="min-h-screen bg-green-100">
+        <Navbar />
+        <main className="-mt-32">
+          <Component {...pageProps} />
+        </main>
+      </div>
+    </AmplifyAuthenticator>
   );
 }
 
