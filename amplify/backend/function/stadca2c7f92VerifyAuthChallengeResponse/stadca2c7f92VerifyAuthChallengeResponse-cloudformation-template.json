@@ -2,6 +2,10 @@
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Lambda resource stack creation using Amplify CLI",
   "Parameters": {
+    "RECAPTCHASECRET": {
+      "Type": "String",
+      "Default": ""
+    },
     "modules": {
       "Type": "String",
       "Default": "",
@@ -63,12 +67,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "stadca2c7f92DefineAuthChallenge",
+            "stadca2c7f92VerifyAuthChallengeResponse",
             {
               "Fn::Join": [
                 "",
                 [
-                  "stadca2c7f92DefineAuthChallenge",
+                  "stadca2c7f92VerifyAuthChallengeResponse",
                   "-",
                   {
                     "Ref": "env"
@@ -88,6 +92,9 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
+            },
+            "RECAPTCHASECRET": {
+              "Ref": "RECAPTCHASECRET"
             }
           }
         },
@@ -115,12 +122,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "stadca2c7f92DefineAuthChallenge",
+            "stadca2c7f92VerifyAuthChallengeResponse",
             {
               "Fn::Join": [
                 "",
                 [
-                  "stadca2c7f92DefineAuthChallenge",
+                  "stadca2c7f92VerifyAuthChallengeResponse",
                   "-",
                   {
                     "Ref": "env"

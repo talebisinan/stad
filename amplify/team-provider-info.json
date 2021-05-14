@@ -19,7 +19,22 @@
         }
       },
       "function": {
-        "stadca2c7f92DefineAuthChallenge": {}
+        "stadca2c7f92DefineAuthChallenge": {
+          "deploymentBucketName": "amplify-stad-dev-190913-deployment",
+          "s3Key": "amplify-builds/stadca2c7f92DefineAuthChallenge-646c513932625043736d-build.zip"
+        },
+        "stadca2c7f92CreateAuthChallenge": {
+          "deploymentBucketName": "amplify-stad-dev-190913-deployment",
+          "s3Key": "amplify-builds/stadca2c7f92CreateAuthChallenge-4678616478564e563372-build.zip"
+        },
+        "stadca2c7f92VerifyAuthChallengeResponse": {
+          "RECAPTCHASECRET": "",
+          "deploymentBucketName": "amplify-stad-dev-190913-deployment",
+          "s3Key": "amplify-builds/stadca2c7f92VerifyAuthChallengeResponse-55625a44514d59714e54-build.zip"
+        }
+      },
+      "auth": {
+        "stadca2c7f92": {}
       }
     }
   }
