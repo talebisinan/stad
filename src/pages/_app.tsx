@@ -1,7 +1,11 @@
 import type { AppProps /*, AppContext */ } from "next/app";
 import React from "react";
-import Navbar from "../components/Layout/Navbar";
+import { Amplify } from "aws-amplify";
 import "../styles/globals.css";
+import Navbar from "../components/Layout/Navbar";
+import awsExports from "../aws-exports";
+
+Amplify.configure({ ...awsExports, ssr: true });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

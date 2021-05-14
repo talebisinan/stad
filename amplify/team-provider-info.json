@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-stad-dev-190913-authRole",
+            "UnauthRoleArn": "arn:aws:iam::163132858187:role/amplify-stad-dev-190913-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::163132858187:role/amplify-stad-dev-190913-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-stad-dev-190913-deployment",
+            "UnauthRoleName": "amplify-stad-dev-190913-unauthRole",
+            "StackName": "amplify-stad-dev-190913",
+            "StackId": "arn:aws:cloudformation:eu-west-1:163132858187:stack/amplify-stad-dev-190913/1d041ff0-b4d7-11eb-9bc1-0a129cf28109",
+            "AmplifyAppId": "d2x062bg0abb34"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d2x062bg0abb34",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}
